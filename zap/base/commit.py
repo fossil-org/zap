@@ -33,4 +33,6 @@ class Commit:
             path
         )
     def __str__(self):
-        return f"{self.msg.ljust(30)} | cid: {self.cid.ljust(5)} | branch: {self.branch.ljust(10)}"
+        return self.to_string()
+    def to_string(self, msg_ljust=30):
+        return f"{self.msg.ljust(msg_ljust)} | cid: {self.cid.ljust(5)} | branch: {self.branch.ljust(10)} | rb: zap rollback --cid {self.cid} --branch {self.branch}"
