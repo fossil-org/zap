@@ -189,16 +189,13 @@ type 'n' or press <ctrl-c> or <ctrl-d> to cancel
         path_temp = self.srcobj.path_temp / temp_item_id
         copytree(self.path_zap, path_temp)
         for item in listdir(self.path):
-            if item == ".zap":
-                continue
             path = self.path / item
             if path.is_dir():
                 rmtree(path)
-            else:
+            else: # dasda
                 remove(path)
         copytree(commit.path, self.path, ignore=self.ignore(".zap-commit"), dirs_exist_ok=True)
-        rmtree(self.path_zap)
-        copytree(path_temp, self.path / ".zap", dirs_exist_ok=True)
+        copytree(path_temp, self.path_zap, dirs_exist_ok=True)
         rmtree(path_temp)
         self.ghm.full_save(f"[rb] {commit.msg}", f"[rb] {cid}", branch, "rollback commit")
         return True
@@ -274,5 +271,4 @@ type 'n' or press <ctrl-c> or <ctrl-d> to cancel
         def __help():
             """redirects to zap help"""
             help()
-
         srcobj.cmdreg.run(srcobj, cmd, args)

@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="795543ee-9cbc-479a-83d2-76cdbcfd2d72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.zap/branches/main/1" beforeDir="false" afterPath="$PROJECT_DIR$/.zap/branches/main/1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.zap/branches/main/2" beforeDir="false" afterPath="$PROJECT_DIR$/.zap/branches/main/2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.zap/branches/main/3" beforeDir="false" afterPath="$PROJECT_DIR$/.zap/branches/main/3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/zap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/zap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap/base/commit.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/zap/base/repo.py" beforeDir="false" afterPath="$PROJECT_DIR$/zap/base/repo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zap/libs/print" beforeDir="false" afterPath="$PROJECT_DIR$/zap/libs/print" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap/libs/handle.py" beforeDir="false" afterPath="$PROJECT_DIR$/zap/libs/handle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/zap/src/handle.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
