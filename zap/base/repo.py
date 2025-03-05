@@ -40,6 +40,9 @@ class Repo:
         def runcmd(self, l):
             from subprocess import run, CalledProcessError, PIPE
             from sys import argv
+            if "--testing" in argv:
+                print(f"running '{' '.join(l)}' {l}")
+                return
             errors = "--verbose" not in argv
             o = run(l, cwd=str(self.repo.path), capture_output=errors, text=errors)
             if o.returncode != 0:
@@ -73,7 +76,6 @@ commit info:
         def push(self):
             self.runcmd(["git", "push", "--all", "--force"])
         def full_save(self, msg, cid, branch, ct):
-            self.pull()
             self.add_all()
             self.commit(msg, cid, branch, ct)
             self.push()
@@ -124,6 +126,8 @@ commit info:
         from .commit import Commit
         l = []
         if branch is not None:
+            if not self.branch_exists(branch):
+                raise Exception(f"branch {branch} does not exist.")
             l += self.list_commits_from_branch(branch)
         else:
             for branch in self.list_branches():
